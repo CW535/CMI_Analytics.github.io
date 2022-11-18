@@ -51,10 +51,56 @@
 </h4>
 </div>
 <div id="current" class="panel-collapse collapse in">
-<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. </div>
+<div class="panel-body">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+            <th>Analytic</th>
+            <th>Description</th>
+           </tr>
+            </thead>
+            <tbody>
+            <tr>
+          <td>Sentiment Analysis </td>
+          <td>Detect overall positive/ negative sentiment in social media posts. Assuming a normal distribution to calculate how far away from baseline a sentiment is</td>
+          </tr>
+          <tr>
+          <td>Spike Detection</td>
+          <td>Show changes in rate of topics over time, to detect rapid increase—or decrease—of a topic within social media</td>
+          </tr>
+          <tr>
+          <td>Word Cloud</td>
+          <td>Visualize most frequently used words</td>
+          </tr>
+          <tr>
+          <td> Hashtag Network</td>
+          <td> Identify hashtags that co-travel on different twitter posts</td>
+          </tr>
+          <tr>
+          <td>URL Analysis</td>
+          <td> Identify most frequently reference URLs and authors that post URLs as part of tweets</td>
+          </tr>
+          <tr>
+          <td>Angriness</td>
+          <td>Scoring showing an individual emotional category based on the NRC lexicon</td>
+          </tr>
+          <tr>
+          <td>Emotional Flower</td>
+          <td> Scoring across all 8 emotional categories in the NRC displayed as a radar plot</td>
+          </tr>
+          <tr>
+          <td>Location Extraction</td>
+          <td>Location inference based on tweet followership and other meta data about the tweet rather than using only key words from the tweet itself</td>
+          </tr>
+          <tr>
+          <td>Topic Modeling</td>
+          <td>Summary topic being generated from meltwater queries. First pass is done using BERT and individual queries from meltwater and then the keywords from there are process by Genism to further refine and limit to a human consumable number</td>
+          </tr>
+          <tr>
+          <td>Influence Network Analysis </td>
+          <td>Tweet network analysis to identify influence power in social networks using tweet data. Looking at how quickly information spreads and reach of information.</td>
+          </tr>
+          </div>
       </div>
       </div>
      <div class="panel panel-default">
