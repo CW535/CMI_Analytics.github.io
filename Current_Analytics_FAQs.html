@@ -15,12 +15,26 @@
 <!--- Analyst Accelerator ---!>
       <h3> FAQs about <b>The Analyst Accelerator</b></h3>
     <h5> What data is being analyzed? </h5>
+    <p> Twitter, Telegram, and Facebook data. <u><i>Coming soon:</i></u> WhatsApp data, Reddit data, TikTok data, and Instagram data. </p>
     <h5>Where is said data coming from? </h5>
+    <p> Twitter API, Telepathy API for Telegram, and the Facebook API. The data is then pulled into a snowflake table, which is then connected to PBI Desktop, where it can easily be visualized. Sources are in the cloud so that an automatic refresh can pull new data into the PowerBI Dashboard that is held in the online workspace. </p>
     <h5> Are any of the data sources paid subscriptions?</h5>
+    <p> No, not that I know of. I mean, we pay for Snowflake. </p>
     <h5> What are some of the data fields already being pulled from said APIs?</h5>
+    <p> Quite a few of the data fields are pulled from the APIs, only a few data fields/columns are created in the ETL (Extract, Transform, Load) in PowerBI Desktop. For example, the domain source in Telegram, that was produced through ETL by pulling the media links url and isolating the last three letters of the link, i.e. if it was twitter.com, the 'com' part would be isolated to name the origin, which for 'com' stands for commercial while kr stood for South Korea. For Twitter, the 'Influencer?' column was created through ETL. </
     <h5> Who uses the Analyst Accelerator and how do they use it? </h5?\>
+    <p> CDPH Analysts, such as Alfonso and Roberto of the Spanish Sensing Team, and Ben of the English Sensing team. Last names have been removed for privacy and ambiguity. <p>
     <h5> How often is the data updated? </h5>
-    <h5> What features were exclusively designed in PowerBI Desktop vs Python? </h5>
+    <p> Twitter and News data is updated every day around 8am EST, and CDPH Curated News is updated again at 3pm EST. In comparsion, Telegram and Facebook data is updated once a week, on either Friday. </p>
+    <h5> What features were exclusively designed in PowerBI Desktop vs Python? </h5
+    <p> In PowerBI Desktop: </p>
+        <ul><p> 'Query Nanme: Tweet Fluctuations on a Weekly Basis'</p></ul>
+        <ul><p> 'Query Name: Engagement Fluctuations on a Weekly Basis'</p></ul>
+        <ul><p> Domain Source/Domain Locations </p></ul>
+        <ul><p> Twitter Followers with Anomaly Detection </p></ul>
+        <ul><p> News Outlets by location in HPI Score Map </p></ul>
+    <p> In Python: </p>
+        <ul><p>Sentiment Analytics</p></ul>
     
     <hr></hr>
 <!--- Sentiment Analytics ---!>
@@ -30,11 +44,15 @@
 <h5> Which emotional dictionaries is the code using? </h5>
   <p> <ul> English: NRC, Syuzhet, Bing, Afinn </ul></p>
   <p><ul> Spanish: Rojas, NRC, Chen, and SEL </ul></p>
+  <p> ^ These are emotional dictionaries, which contain numeric values, based on the word and language. </p>
   <h5> What distributions are being considered? </h5>
   <p>As of now only the normal distribution is being considered but there have been conversations involving curve fitting and statistical testing.</p>
   <h5>Which emotions are being considered?</h5>
   <p>The NRC dictionary considers the following emotions: Anger, Disgust, Fear, Anticipation, Surprise, Sadness, Joy, and Trust.</p>
-  <h5> How have sentiment analytics been applied to products? What insights were taken from that?</h5>
+  <h5> How have sentiment analytics been applied to products? </h5>
+  <p> As of now, the sentiment analytic serve as an accelerator for the analyst. It allows the analyst to narrow down on posts with high emotional value, depending on the dataset. </p>
+  <h5> What insights were taken from that? </h5>
+  <p> The scatter plot gives a visual of the sentiment value, with its category for a specific time of day. This allows us to see the emotional variance within posts.</p>
            
 </body>
 </html>
