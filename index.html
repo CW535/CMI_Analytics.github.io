@@ -10,7 +10,7 @@
   </head>
    <!---Style for header title -->
   <style>
-.h1 {
+h1 {
 background-color: #f1f1f1;
 padding: 20px;
 text-align="center";
@@ -20,7 +20,7 @@ text-align="center";
 <!--- header ---->
   <div class="jumbotron text-center">
   <h1> CMI Analytics Hub Site</h1>
-  <p> See Ticket # 25069 in Azure DevOps for more details </p
+  <h5> See Ticket # 25069 in Azure DevOps for more details </h5>
   </div>
   
 <!---Style for body -->
@@ -29,7 +29,7 @@ body {
 background-color: lightblue;
 }
 
-p {
+h5{
 text-align: center;
 color: blue;
 }
@@ -39,6 +39,24 @@ color: blue;
 
   <body>
     <hr> </hr>  
+    
+    <!--- NavBar Style --->
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+    .navbar-header {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    .navbar-header:hover{
+    background-color: lightblue;
+    color: black;
+    }
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
