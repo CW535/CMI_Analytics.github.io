@@ -35,7 +35,15 @@
 <!---- Influence Estimation ---!>
 <h3>FAQs about Influence Estimation </h3>
 <h5>What will I see when I click on the link? </h5>
-<p> You will be taken to an excel spreadsheet with various tabs and a single dataset that is used to explore influence estimation formulas, as they are defined in the academic research paper called [insert title in italics]. The equations you'll see are: [insert list of equations] </p>
+<p> You will be taken to an excel spreadsheet with various tabs and a single dataset that is used to explore influence estimation formulas, as they are defined in the academic research paper called <i>Measuring User Influence on Twitter: A Survey</i> by Fabian Riquelme and Pablo Gonzalez-Cantergiani. The equations you'll see are:
+ <ul>
+<li> OT1=Number of original tweets (OTs) posted by the author, RP1=Number of Replies posted by the author. RT1 = Number of retweets accomplished by the author. FT1=Number of tweets of other usrs marked as favorite (liked) by the author. F1= Number of followers. F3 = Number of Followees </li>
+<li>General Activity = OT1 + RP1 + RT1 + FT1</li>
+<li>Signal Strength =  (OT1)/ (OT1 + RT1)</li>
+<li>FollowerRank = F1/ (F1+F3) </li>
+<li>Popularity(i) = 1 􀀀 e􀀀F1 </li>
+</ul>
+</p>
 
 <h5> Why is this capability/metric important? </h5>
 <p> It is good to know whose message carries the most weight among their audience to determine the amount of undue influence one user may have over several users</p>
@@ -70,16 +78,16 @@
 <h3> FAQs about Amplification Detection </h3>
 
 <h5> What is this?</h5>
-<p> </p>
+<p> This determines which users are the ones which are amplifying their messages the most or which users are getting the most responses based on certain metrics. </p>
 
 <h5> Why is it important, what value does it bring?</h5>
-<p> </p>
+<p> This allows for analyst to narrow down on users which are causing impact in the network (replies and comments).</p>
 
 <h5> Explain this capability at a high level </h5>
 <p></p>
 
 <h5> Can it be applied to other datasets? </h5>
-<p></p>
+<p>Yes, with certain modifications.</p>
 
 <h5> Any final thoughts you would like to share about this analytic? </h5>
 <p></p>
