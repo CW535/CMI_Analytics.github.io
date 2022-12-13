@@ -9,11 +9,11 @@ form.addEventListener("submit",(e)=>{
 
 const submit=()=>{
   let name = document.getElementById("name").value;
-    let age = document.getElementById("age").value;
-    let state = document.getElementById("state").value;
+    let email = document.getElementById("Email").value;
+    let state = document.getElementById("comment").value;
 
 
-  let newArray = [name,age,state];
+  let newArray = [Email,name,comment];
   newArray.forEach((item)=>{
       var li = document.createElement("li");
   var text = document.createTextNode(item);
