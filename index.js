@@ -1,6 +1,6 @@
 let form=document.getElementById("formSubmission");
 
-let table=document.getElementById('data');
+let table=document.getElementById("data");
 form.addEventListener("submit",(e)=>{
   e.preventDefault();
   submit();
