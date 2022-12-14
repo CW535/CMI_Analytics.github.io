@@ -7,7 +7,7 @@ hr {
   background-color: lightblue;
 }
 
-table {
+table, h3 {
   border: 2px solid blue;
   border-radius: 8px;
   padding: 5px;
