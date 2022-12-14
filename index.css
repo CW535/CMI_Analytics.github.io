@@ -7,11 +7,14 @@ hr {
   background-color: lightblue;
 }
 
-table, h3 {
+h3 {
   border: 2px solid blue;
   border-radius: 8px;
   padding: 5px;
 }
 
-h5 {
+div {
+ border: 3px solid;
+  border-radius: 10px;
+  padding: 7px;
 }
